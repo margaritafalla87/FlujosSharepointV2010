@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="ddfeb730-500f-4f76-ab23-6d0242f6128c" ResetWebServer="TRUE" SharePointProductVersion="14.0">
+  <Assemblies>
+    <Assembly Location="FlujoosSHP2010.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\FlujoosSHP2010\BandejaTareas.aspx" />
+    <TemplateFile Location="Layouts\FlujoosSHP2010\UserControlPage.aspx" />
+    <TemplateFile Location="ControlTemplates\FlujoosSHP2010\BandejaTareasUC.ascx" />
+    <TemplateFile Location="ControlTemplates\FlujoosSHP2010\UserControl1.ascx" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="FlujoosSHP2010_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

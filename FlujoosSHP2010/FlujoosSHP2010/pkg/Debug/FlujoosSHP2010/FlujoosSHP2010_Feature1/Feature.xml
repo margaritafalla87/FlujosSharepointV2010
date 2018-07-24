@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="b5778d7d-fe82-42a7-8217-890f8f381664" Scope="Site" Title="FlujoosSHP2010 Feature1">
+  <ElementManifests>
+    <ElementManifest Location="WFRegimenCambiario\Elements.xml" />
+  </ElementManifests>
+</Feature>

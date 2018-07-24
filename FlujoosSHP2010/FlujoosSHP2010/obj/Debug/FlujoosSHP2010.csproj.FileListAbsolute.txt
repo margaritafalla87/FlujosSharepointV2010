@@ -1,0 +1,5 @@
+C:\CC\FlujoosSHP2010\FlujoosSHP2010\obj\Debug\FlujoosSHP2010.csprojResolveAssemblyReference.cache
+C:\CC\FlujoosSHP2010\FlujoosSHP2010\bin\Debug\FlujoosSHP2010.dll
+C:\CC\FlujoosSHP2010\FlujoosSHP2010\bin\Debug\FlujoosSHP2010.pdb
+C:\CC\FlujoosSHP2010\FlujoosSHP2010\obj\Debug\FlujoosSHP2010.dll
+C:\CC\FlujoosSHP2010\FlujoosSHP2010\obj\Debug\FlujoosSHP2010.pdb

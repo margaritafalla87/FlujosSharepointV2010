@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Personalice el texto incluido entre corchetes. 
+Quite los corchetes, por ejemplo, cuando rellene la información.
+Name="[NAME]" ==> Name="MyWorkflow" -->
+
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Workflow
+     Name="FlujoosSHP2010 - WFRegimenCambiario"
+     Description="Mi flujo de trabajo de SharePoint"
+     Id="e0a5036d-ad3f-4e65-a998-9175dfe16b5a"
+     CodeBesideClass="FlujoosSHP2010.FlujosdeTrabajo.WFRegimenCambiario.WFRegimenCambiario"
+     CodeBesideAssembly="$assemblyname$">
+    <Categories/>
+    <MetaData>
+      <AssociationCategories>List</AssociationCategories>
+      <!-- Etiquetas para especificar formularios de InfoPath para el flujo de trabajo; elimine las etiquetas de los formularios que no tenga. -->
+      <!--<Association_FormURN>[URN FOR ASSOCIATION FORM]</Association_FormURN>
+       <Instantiation_FormURN>[URN FOR INSTANTIATION FORM]</Instantiation_FormURN>
+      <Task0_FormURN>[URN FOR TASK (type 0) FORM]</Task0_FormURN>
+      <Task1_FormURN>[URN FOR TASK (type 1) FORM]</Task1_FormURN>-->
+      <!-- Formularios de modificación: cree un GUID único para cada formulario de modificación -->
+      <!--<Modification_[UNIQUE GUID]_FormURN>[URN FOR MODIFICATION FORM]</Modification_[UNIQUE GUID]_FormURN>
+      <Modification_[UNIQUE GUID]_Name>[NAME OF MODIFICATION TO BE DISPLAYED AS A LINK ON WORKFLOW STATUS PAGE</Modification_[UNIQUE GUID]_Name>
+      -->
+      <StatusPageUrl>_layouts/WrkStat.aspx</StatusPageUrl>
+    </MetaData>
+  </Workflow>
+</Elements>

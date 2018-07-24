@@ -1,0 +1,145 @@
+﻿<StateMachineWorkflowDesigner xmlns:ns0="clr-namespace:System.Drawing;Assembly=System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" Size="836; 534" AutoSizeMargin="16; 24" AutoSize="False" Location="30; 30" Name="WFRegimenCambiario" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/workflow">
+	<StateMachineWorkflowDesigner.DesignerConnectors>
+		<StateDesignerConnector TargetActivity="stateInProgress" TargetConnectionEdge="Top" SetStateName="setStateActivity1" SourceActivity="WFRegimenCambiarioInitialState" TargetConnectionIndex="0" SourceStateName="WFRegimenCambiarioInitialState" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity1" SourceConnectionIndex="0" TargetStateName="stateInProgress">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="194" Y="206" />
+				<ns0:Point X="290" Y="206" />
+				<ns0:Point X="290" Y="319" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateInProgress" TargetConnectionEdge="Top" SetStateName="setStateActivity4" SourceActivity="stateReview" TargetConnectionIndex="0" SourceStateName="stateReview" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity3" SourceConnectionIndex="1" TargetStateName="stateInProgress">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="593" Y="420" />
+				<ns0:Point X="634" Y="420" />
+				<ns0:Point X="634" Y="311" />
+				<ns0:Point X="290" Y="311" />
+				<ns0:Point X="290" Y="319" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateReview" TargetConnectionEdge="Top" SetStateName="setStateActivity2" SourceActivity="stateInProgress" TargetConnectionIndex="0" SourceStateName="stateInProgress" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity2" SourceConnectionIndex="1" TargetStateName="stateReview">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="349" Y="384" />
+				<ns0:Point X="390" Y="384" />
+				<ns0:Point X="390" Y="347" />
+				<ns0:Point X="534" Y="347" />
+				<ns0:Point X="534" Y="355" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateCrearExpediente" TargetConnectionEdge="Top" SetStateName="setStateActivity3" SourceActivity="stateReview" TargetConnectionIndex="0" SourceStateName="stateReview" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity3" SourceConnectionIndex="1" TargetStateName="stateCrearExpediente">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="593" Y="420" />
+				<ns0:Point X="634" Y="420" />
+				<ns0:Point X="634" Y="175" />
+				<ns0:Point X="740" Y="175" />
+				<ns0:Point X="740" Y="183" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+		<StateDesignerConnector TargetActivity="stateFinished" TargetConnectionEdge="Top" SetStateName="setStateActivity5" SourceActivity="stateCrearExpediente" TargetConnectionIndex="0" SourceStateName="stateCrearExpediente" SourceConnectionEdge="Right" EventHandlerName="eventDrivenActivity4" SourceConnectionIndex="1" TargetStateName="stateFinished">
+			<StateDesignerConnector.Segments>
+				<ns0:Point X="790" Y="248" />
+				<ns0:Point X="843" Y="248" />
+				<ns0:Point X="843" Y="436" />
+				<ns0:Point X="731" Y="436" />
+				<ns0:Point X="731" Y="448" />
+			</StateDesignerConnector.Segments>
+		</StateDesignerConnector>
+	</StateMachineWorkflowDesigner.DesignerConnectors>
+	<StateMachineWorkflowDesigner.Designers>
+		<StateDesigner Size="196; 80" AutoSizeMargin="16; 24" Location="48; 165" Name="WFRegimenCambiarioInitialState">
+			<StateDesigner.Designers>
+				<EventDrivenDesigner Name="eventDrivenActivity1" Size="150; 182" Location="56; 196">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onWorkflowActivated1" Size="130; 41" Location="66; 258" />
+						<SetStateDesigner Name="setStateActivity1" Size="130; 41" Location="66; 318" />
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Size="175; 80" AutoSizeMargin="16; 24" Location="447; 355" Name="stateReview">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Name="stateInitializationActivity2" Size="150; 122" Location="455; 386">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Name="createTask2" Size="130; 41" Location="465; 448" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Name="eventDrivenActivity3" Size="612; 544" Location="455; 410">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onTaskChanged2" Size="130; 41" Location="696; 472" />
+						<IfElseDesigner Name="ifElseActivity2" Size="592; 403" Location="465; 532">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Name="ifElseBranchActivity3" Size="381; 303" Location="484; 603">
+									<IfElseBranchDesigner.Designers>
+										<IfElseDesigner Name="ifElseActivity3" Size="361; 222" Location="494; 665">
+											<IfElseDesigner.Designers>
+												<IfElseBranchDesigner Name="ifElseBranchActivity5" Size="150; 122" Location="513; 736">
+													<IfElseBranchDesigner.Designers>
+														<SetStateDesigner Name="setStateActivity3" Size="130; 41" Location="523; 798" />
+													</IfElseBranchDesigner.Designers>
+												</IfElseBranchDesigner>
+												<IfElseBranchDesigner Name="ifElseBranchActivity6" Size="150; 122" Location="686; 736">
+													<IfElseBranchDesigner.Designers>
+														<SetStateDesigner Name="setStateActivity4" Size="130; 41" Location="696; 798" />
+													</IfElseBranchDesigner.Designers>
+												</IfElseBranchDesigner>
+											</IfElseDesigner.Designers>
+										</IfElseDesigner>
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Name="ifElseBranchActivity4" Size="150; 303" Location="888; 603" />
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Size="175; 80" AutoSizeMargin="16; 24" Location="203; 319" Name="stateInProgress">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Name="stateInitializationActivity1" Size="150; 122" Location="211; 350">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Name="createTask1" Size="130; 41" Location="221; 412" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Name="eventDrivenActivity2" Size="381; 363" Location="211; 374">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onTaskChanged1" Size="130; 41" Location="336; 436" />
+						<IfElseDesigner Name="ifElseActivity1" Size="361; 222" Location="221; 496">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Name="ifElseBranchActivity1" Size="150; 122" Location="240; 567">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Name="setStateActivity2" Size="130; 41" Location="250; 629" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Name="ifElseBranchActivity2" Size="150; 122" Location="413; 567" />
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+		<StateDesigner Size="160; 80" AutoSizeMargin="16; 24" Location="651; 448" Name="stateFinished" />
+		<StateDesigner Size="192; 128" AutoSizeMargin="16; 24" AutoSize="False" Location="644; 183" Name="stateCrearExpediente">
+			<StateDesigner.Designers>
+				<StateInitializationDesigner Name="stateInitializationActivity3" Size="150; 122" Location="277; 148">
+					<StateInitializationDesigner.Designers>
+						<CallExternalMethodActivityDesigner Name="createTask_CrearExp" Size="130; 41" Location="287; 210" />
+					</StateInitializationDesigner.Designers>
+				</StateInitializationDesigner>
+				<EventDrivenDesigner Name="eventDrivenActivity4" Size="381; 363" Location="269; 159">
+					<EventDrivenDesigner.Designers>
+						<HandleExternalEventActivityDesigner Name="onTaskChanged3" Size="130; 41" Location="394; 221" />
+						<IfElseDesigner Name="ifElseActivity4" Size="361; 222" Location="279; 281">
+							<IfElseDesigner.Designers>
+								<IfElseBranchDesigner Name="ifElseBranchActivity7" Size="150; 122" Location="298; 352">
+									<IfElseBranchDesigner.Designers>
+										<SetStateDesigner Name="setStateActivity5" Size="130; 41" Location="308; 414" />
+									</IfElseBranchDesigner.Designers>
+								</IfElseBranchDesigner>
+								<IfElseBranchDesigner Name="ifElseBranchActivity8" Size="150; 122" Location="471; 352" />
+							</IfElseDesigner.Designers>
+						</IfElseDesigner>
+					</EventDrivenDesigner.Designers>
+				</EventDrivenDesigner>
+			</StateDesigner.Designers>
+		</StateDesigner>
+	</StateMachineWorkflowDesigner.Designers>
+</StateMachineWorkflowDesigner>

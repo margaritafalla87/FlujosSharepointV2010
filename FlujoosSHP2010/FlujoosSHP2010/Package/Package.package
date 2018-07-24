@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ddfeb730-500f-4f76-ab23-6d0242f6128c" solutionId="ddfeb730-500f-4f76-ab23-6d0242f6128c" resetWebServer="true" name="FlujoosSHP2010" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7683887e-4c0e-4f42-a69b-02e70e381581" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="4b10d8b5-bd05-4a9d-b2b7-c64000e5364a" />
+    <projectItemReference itemId="3652336a-02c5-4d78-9936-3d887919f3ba" />
+  </projectItems>
+</package>
